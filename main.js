@@ -12,6 +12,6 @@ function renderTable(series) {
 function AverageSeassons(series) {
     var totalS = 0;
     var avgss = document.getElementById("average-seasons");
-    series.forEach(function (serie) { (totalS += serie.season); });
+    series.forEach(function (serie) { (totalS += serie.seasons); });
     avgss.innerHTML = "".concat((totalS / series.length));
 }
